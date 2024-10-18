@@ -42,6 +42,5 @@ export class ProductsController {
   @MessagePattern({ cmd: 'validate_products' })
   validateProduct(@Payload() ids: number[]) {
     return this.productsService.validateProduct(ids);
-
   }
 }
